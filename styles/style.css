@@ -312,3 +312,78 @@ section {
   margin-right: 8px;
 }
 /* Hero Section End */
+
+/* Popular Tour Section Start */
+.popular-tour-section {
+  position: relative;
+}
+
+.popular-tour-section .popular-tour-content-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.popular-tour-section .popular-text {
+  flex-basis: 50%;
+  max-width: 50%;
+}
+
+.popular-tour-section .popular-text .popular-title-wrapper {
+  text-align: left;
+}
+
+.popular-tour-section .popular-text .popular-desc-box {
+  margin-top: 16px;
+}
+
+.popular-tour-section .popular-text .popular-desc-box ul li {
+  position: relative;
+  margin-top: 16px;
+  margin-left: 30px;
+  color: rgba(19, 19, 24, 0.7);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  max-width: 525px;
+}
+
+.popular-tour-section .popular-text .popular-desc-box ul li::after {
+  content: "";
+  position: absolute;
+  top: 26%;
+  left: -15px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: rgba(19, 19, 24, 0.7);
+}
+
+.popular-tour-section .popular-text .popular-desc-box > p {
+  max-width: 530px;
+  color: #5a5a5d;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-top: 16px;
+}
+
+.popular-tour-section .popular-text .popular-desc-box .popular-desc-btn {
+  margin-top: 40px;
+}
+
+.popular-tour-section .popular-img {
+  flex-basis: 45%;
+  max-width: 45%;
+}
+
+.popular-tour-section .popular-img img {
+  cursor: grab;
+  transition: all 0.5s ease-in-out;
+}
+
+.popular-tour-section .popular-img img:hover {
+  opacity: 0.8;
+}
+/* Popular Tour Section End */
