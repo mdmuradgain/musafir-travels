@@ -1,73 +1,116 @@
-/* ------------------------------- */
-/* Header Section */
-/* ------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
 
-.header-section {
-  position: sticky;
-  top: 0;
-  left: 0;
+html {
+  overflow-x: hidden;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  font-family: "Mulish", sans-serif;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+span {
+  display: inline-block;
+}
+
+button {
+  cursor: pointer;
+}
+
+textarea {
+  resize: vertical;
+}
+main {
   width: 100%;
-  padding: 26px 0;
-  z-index: 10;
-  background-color: #fff;
+  height: 100%;
 }
 
-.header-section .navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+section {
+  width: 100%;
+  padding: 60px 0;
 }
 
-.header-section .logo img {
-  width: 48px;
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
 }
 
-.header-section .logo a {
+.section-title-wrapper {
+  text-align: center;
+}
+
+.section-title-wrapper h2 {
   color: #131318;
-  font-size: 36px;
+  font-size: 40px;
   font-weight: 800;
 }
 
-.header-section .logo .text-color {
-  color: #ff5400;
-}
-
-.header-section .menu ul li {
-  display: inline-block;
-  margin-left: 44px;
-}
-
-.header-section .menu ul li:first-child {
-  margin-left: 0;
-}
-
-.header-section .menu ul li a {
-  color: #424247;
-  font-size: 18px;
+.section-title-wrapper p {
+  color: rgba(19, 19, 24, 0.7);
+  font-size: 16px;
   font-weight: 400;
-  position: relative;
-  transition: all 0.5s ease-in-out;
+  line-height: 26px;
+  max-width: 577px;
+  margin: 24px auto 0;
 }
 
-.header-section .menu ul li .active-menu-link {
-  color: #ff5400;
-}
-
-.header-section .menu ul li a:hover {
-  color: #ff5400;
-}
-
-.header-section .menu ul li a::after {
-  content: "";
-  position: absolute;
-  bottom: -6px;
-  left: 0;
-  width: 0;
-  height: 1px;
+.primary-btn {
+  display: inline-block;
+  padding: 14px 35px;
+  outline: none;
+  border-radius: 8px;
   background-color: #ff5400;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 800;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
   transition: all 0.5s ease;
 }
 
-.header-section .menu ul li a:hover::after {
-  width: 70%;
+.primary-btn:hover {
+  transform: translateX(6px);
+}
+
+.primary-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  border-color: #131318;
+  background-color: #131318;
+  z-index: -1;
+  transition: all 0.5s ease;
+}
+
+.primary-btn:hover::after {
+  width: 100%;
+}
+
+.hamburger-menu {
+  display: none;
 }
